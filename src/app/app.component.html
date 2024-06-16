@@ -1,2 +1,5 @@
 <app-header />
-<app-todo-lists />
+<app-todo-lists (addList)="onAddList()"/>
+@if (displayDialog) {
+    <app-dialog-box (close)="onCloseAddList()"/>
+}

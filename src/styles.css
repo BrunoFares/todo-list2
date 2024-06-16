@@ -38,3 +38,14 @@ app-todo-list {
     grid-column: 2 / 3;
     display: flex;
 }
+
+app-dialog-box {
+    background-color: rgb(45, 45, 45);
+    height: 10em;
+    width: 20em;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo-lists',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './todo-lists.component.css'
 })
 export class TodoListsComponent {
+  @Output() addList = new EventEmitter<void>();
 
+  onAddList() {
+    return this.addList.emit();
+  }
 }
