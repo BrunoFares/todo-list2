@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { TodoListsComponent } from './todo-lists/todo-lists.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { DialogBoxComponent } from './dialog-box/dialog-box.component';
+import { TodoListComponent } from './todo-lists/todo-list/todo-list.component';
+import { DialogBoxComponent } from './todo-lists/dialog-box/dialog-box.component';
 
 @Component({
   selector: 'app-root',
