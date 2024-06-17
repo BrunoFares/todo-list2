@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { todoTitles } from '../todo-titles';
 
 @Component({
   selector: 'app-dialog-box',
@@ -9,7 +10,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './dialog-box.component.css'
 })
 export class DialogBoxComponent {
-  @Output() submit = new EventEmitter<void>();
   @Output() close = new EventEmitter<void>();
   todoListTitle = '';
 
@@ -18,7 +18,7 @@ export class DialogBoxComponent {
   }
 
   onSubmit() {
-    console.log(this.todoListTitle);
-    return this.submit.emit();
+    todoTitles.push(this.todoListTitle);
+    return this.close.emit();
   }
 }

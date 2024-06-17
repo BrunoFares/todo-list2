@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { todoTitles } from './todo-titles';
 
 @Component({
   selector: 'app-todo-lists',
@@ -9,6 +10,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class TodoListsComponent {
   @Output() addList = new EventEmitter<void>();
+  titles = todoTitles;
 
   onAddList() {
     return this.addList.emit();

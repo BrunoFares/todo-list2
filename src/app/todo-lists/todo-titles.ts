@@ -1,0 +1,1 @@
+export const todoTitles = ["Work", "Health", "Personal"]

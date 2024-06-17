@@ -1,2 +1,5 @@
 <h2>Your Todo-lists</h2>
+@for(title of titles; track title) {
+    <button class="options">{{ title }}</button>
+}
 <button (click)="onAddList()">Add a Todo-list</button>
