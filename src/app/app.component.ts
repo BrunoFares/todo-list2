@@ -21,4 +21,8 @@ export class AppComponent {
   onCloseAddList() {
     this.displayDialog = false;
   }
+
+  onSubmit() {
+    this.displayDialog = false;
+  }
 }
