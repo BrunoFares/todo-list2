@@ -11,13 +11,17 @@ import { todoTitles } from '../todo-titles';
 })
 export class DialogBoxComponent {
   @Output() close = new EventEmitter<void>();
-  todoListTitle = '';
+  todoListTitle = {
+    id: 'u' + todoTitles.length,
+    title: ''
+  };
 
   onClose() {
     return this.close.emit();
   }
 
   onSubmit() {
+    console.log(todoTitles);
     todoTitles.push(this.todoListTitle);
     return this.close.emit();
   }
